@@ -9,8 +9,8 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>Mod of Sanguo</name>
-    <description>Sanguo</description>
+    <name>Three Kingdoms of Spire</name>
+    <description>The story of the Three Kingdoms</description>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -19,7 +19,7 @@
         <SlayTheSpire.version>12-22-2020</SlayTheSpire.version>
         <ModTheSpire.version>3.23.2</ModTheSpire.version>
         <!-- @todo Steam app -->
-        <Steam.path>steam/steamapps</Steam.path>
+        <Steam.path>${project.basedir}/lib</Steam.path>
     </properties>
     <dependencies>
         <dependency>
@@ -27,21 +27,19 @@
             <artifactId>slaythespire</artifactId>
             <version>2020-11-30</version>
             <scope>system</scope>
-            <systemPath>${Steam.path}/common/SlayTheSpire/desktop-1.0.jar</systemPath>
+            <systemPath>${Steam.path}/desktop-1.0.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>basemod</groupId>
             <artifactId>basemod</artifactId>
-            <version>5.33.1</version>
             <scope>system</scope>
-            <systemPath>${Steam.path}/workshop/content/646570/1605833019/BaseMod.jar</systemPath>
+            <systemPath>${Steam.path}/BaseMod.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.evacipated.cardcrawl</groupId>
             <artifactId>ModTheSpire</artifactId>
-            <version>3.23.2</version>
             <scope>system</scope>
-            <systemPath>${Steam.path}/workshop/content/646570/1605060445/ModTheSpire.jar</systemPath>
+            <systemPath>${Steam.path}/ModTheSpire.jar</systemPath>
         </dependency>
     </dependencies>
 
