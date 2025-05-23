@@ -36,3 +36,6 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### 游戏核心包 ###
+/lib/desktop-1.0.jar
