@@ -1,8 +1,22 @@
 package com.zlizhe.sanguo.cards;
 
+import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
+
 public class Strike extends CustomCard {
+    public static final String ID = "SanguoApp:Strike";
+    private static final String NAME = "打击";
+    private static final String IMG_PATH = "sanguo/img/cards/Strike.png";
+    private static final int COST = 1;
+    private static final String DESCRIPTION = "造成 !D! 点伤害。";
+    private static final CardType TYPE = CardType.ATTACK;
+    private static final CardColor COLOR = CardColor.COLORLESS;
+    private static final CardRarity RARITY = CardRarity.BASIC;
+    private static final CardTarget TARGET = CardTarget.ENEMY;
+
     public Strike() {
-        super(id, name, img, cost, rawDescription, type, color, rarity, target);
+        super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
     }
 
     @Override

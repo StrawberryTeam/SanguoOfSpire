@@ -1,7 +1,12 @@
 package com.zlizhe.sanguo.modcore;
 
+import basemod.BaseMod;
+import basemod.interfaces.EditCardsSubscriber;
+import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
+import com.zlizhe.sanguo.cards.Strike;
+
 @SpireInitializer
-public class SanguoApp implements EditCardsSubscriber{
+public class SanguoApp implements EditCardsSubscriber {
     // 构造方法
     public SanguoApp() {
         BaseMod.subscribe(this);
@@ -16,5 +21,6 @@ public class SanguoApp implements EditCardsSubscriber{
     @Override
     public void receiveEditCards() {
         // TODO 这里写添加你卡牌的代码
+        BaseMod.addCard(new Strike());
     }
 }

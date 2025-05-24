@@ -1,10 +1,10 @@
 {
-  "modid": "ModOfSanguo",
-  "name": "Sanguo",
+  "modid": "com.zlizhe.suoguo",
+  "name": "Three Kingdoms of Spire",
   "author_list": ["YouRan"],
-  "description": "Sanguo",
-  "version": "0.0.1",
-  "sts_version": "12-22-2020",
-  "mts_version": "3.23.2",
+  "description": "The story of the Three Kingdoms",
+  "version": "0.0.2",
+  "sts_version": "12-18-2022",
+  "mts_version": "3.30.0",
   "dependencies": ["basemod"]
 }
