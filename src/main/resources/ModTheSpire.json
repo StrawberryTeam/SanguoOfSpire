@@ -5,6 +5,6 @@
   "description": "The story of the Three Kingdoms",
   "version": "0.0.2",
   "sts_version": "12-18-2022",
-  "mts_version": "3.30.0",
+  "mts_version": "3.3.0",
   "dependencies": ["basemod"]
 }
